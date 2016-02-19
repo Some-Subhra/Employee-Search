@@ -1,0 +1,122 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+margin:0;
+padding:0;	
+}
+
+body {
+font-family: 'Roboto', sans-serif;
+}
+html,body {
+height:100%;
+}
+
+ol,ul {
+margin-bottom:0;
+}
+.text1 {
+font-size:10px;
+}
+.text2 {
+font-size:12px;
+}
+.text3 {
+font-size:14px;
+}
+.text4 {
+font-size:16px;
+}
+
+.fthin {
+font-weight:300;
+}
+
+.fthin-i {
+font-weight:100;
+font-style:italic;
+}
+
+.fbold {
+font-weight:500;
+}
+
+.fbolder {
+font-weight:700;
+}
+
+.fnormal {
+font-weight:400;
+}
+
+.container {
+height:100%;
+}
+
+.search-bar {
+text-align:center;
+}
+
+.search-field {
+width:100%;
+height:50px;
+border:1px solid #ccc;
+border-radius:3px;
+}
+
+.results {
+   margin-top: 30px;
+}
+
+.details {
+border: 1px solid #ccc;
+margin: 10px 0;
+padding: 10px;
+border-radius: 3px;
+opacity: 1;
+-webkit-animation: smooth .5s ease-in;
+-moz-animation: smooth .5s ease-in;
+-o-animation: smooth .5s ease-in;
+-ms-animation: smooth .5s ease-in;
+animation: smooth .5s ease-in;
+}
+
+@-webkit-keyframes smooth {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
+
+@-moz-keyframes smooth {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
+
+@-o-keyframes smooth {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
+
+@keyframes smooth {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
+
+.details p { 
+margin:0;
+}
+
+.user-image {
+  border-radius:3px;
+  margin-right: 20px;
+  width: 100px;
+}
+
+.user-name {
+  font-size: 24px;
+  color: #696363;
+}
+
+.user-designation {
+font-size: 14px;
+color:#868686;
+}
