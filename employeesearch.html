@@ -48,7 +48,7 @@ function filterFunction(arr) {
     var printdetails = [];
     var i,j;
     for(i = 0; i < arr.length; i++) {
-        printname = arr[i].name;
+        printname = arr[i].name +" "+arr[i].designation;
         var lowerOut = printname.toLowerCase();
         var lowerUname = uname.toLowerCase();
         match = lowerOut.search(lowerUname);
