@@ -37,28 +37,28 @@ function Call () {
 		document.getElementById("user-details").style.display = "block";
 		if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
         	var myArr = JSON.parse(xmlhttp.responseText);
-        	myFunction(myArr);
+        	filterFunction(myArr);
     		}
 };
 xmlhttp.open("GET", url, true);
 xmlhttp.send();
 
-function myFunction(arr) {
-    var match,out = "";
-    var printname = [];
+function filterFunction(arr) {
+    var match,printname = "";
+    var printdetails = [];
     var i,j;
     for(i = 0; i < arr.length; i++) {
-        out = arr[i].name;
-        var lowerOut = out.toLowerCase();
+        printname = arr[i].name;
+        var lowerOut = printname.toLowerCase();
         var lowerUname = uname.toLowerCase();
         match = lowerOut.search(lowerUname);
 	if(match>=0){
-		printname +='<div class="details clearfix"><img class="user-image img-responsive pull-left" src="'+ arr[i].avatar +'">'+ 
-                    	    '<div class="name-desig pull-left"><p class="user-name">'+ out +'</p>'+
+		printdetails +='<div class="details clearfix"><img class="user-image img-responsive pull-left" src="'+ arr[i].avatar +'">'+ 
+                    	    '<div class="name-desig pull-left"><p class="user-name">'+ printname +'</p>'+
                     	    '<p class="user-designation">'+ arr[i].designation +'</p></div></div>';
                 	    
 	}
-	document.getElementById("user-details").innerHTML = printname;
+	document.getElementById("user-details").innerHTML = printdetails;
 		 
     }
 }
