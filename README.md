@@ -1,2 +1,2 @@
 # Employee-Search
-Search employees matched with the letter or words typed in the search field.
+Search employees according to their names if it matches with the letter or words typed in the search field.
