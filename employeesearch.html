@@ -55,7 +55,7 @@ function filterFunction(arr) {
         match = lowerOut.search(lowerUname);
 	if(match>=0){
 		printdetails +='<div class="details clearfix"><img class="user-image img-responsive pull-left" src="'+ arr[i].avatar +'">'+ 
-                    	    '<div class="name-desig pull-left"><p class="user-name">'+ printname +'</p>'+
+                    	    '<div class="name-desig pull-left"><p class="user-name">'+ arr[i].name +'</p>'+
                     	    '<p class="user-designation">'+ arr[i].designation +'</p></div></div>';
                 	    
 	}
