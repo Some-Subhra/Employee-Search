@@ -74,11 +74,19 @@ margin: 10px 0;
 padding: 10px;
 border-radius: 3px;
 opacity: 1;
--webkit-animation: smooth .5s ease-in;
--moz-animation: smooth .5s ease-in;
--o-animation: smooth .5s ease-in;
--ms-animation: smooth .5s ease-in;
-animation: smooth .5s ease-in;
+-webkit-animation: smooth .8s ease-in;
+-moz-animation: smooth .8s ease-in;
+-o-animation: smooth .8s ease-in;
+-ms-animation: smooth .8s ease-in;
+animation: smooth .8s ease-in;
+}
+
+.details-new {
+border: 1px solid #ccc;
+margin: 10px 0;
+padding: 10px;
+border-radius: 3px;
+opacity: 1;
 }
 
 @-webkit-keyframes smooth {
