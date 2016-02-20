@@ -131,3 +131,7 @@ margin:0;
 font-size: 14px;
 color:#868686;
 }
+
+.user-new, .desig-new {
+   margin-bottom:10px;
+}
