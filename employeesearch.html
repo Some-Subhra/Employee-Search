@@ -34,7 +34,6 @@ var url = "sample.json";
 var uname="";
 function Call () {
 		uname = document.getElementById("user").value;
-		document.getElementById("user-details").style.display = "block";
 		if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
         	var myArr = JSON.parse(xmlhttp.responseText);
         	filterFunction(myArr);
@@ -75,9 +74,9 @@ function filterFunction(arr) {
 }
 function Add(){
 	var newName,newDesignation = "";
-	newName = document.getElementsByClassName("userNew");
-	newDesignation = document.getElementsByClassName("desigNew");
-	console.log(newName+" plus new1 "+newDesignation);
+	newName = document.getElementById("userNew");
+	newDesignation = document.getElementById("desigNew");
+	console.log(newName+" plus new2 "+newDesignation);
 }
 
 </script>
