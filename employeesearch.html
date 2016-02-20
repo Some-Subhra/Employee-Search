@@ -59,8 +59,7 @@ function filterFunction(arr) {
                     	    '<p class="user-designation">'+ arr[i].designation +'</p></div></div>';
 		}
 	 }
-	 var userCheck = document.getElementsByClassName("user-name");
-	 if(!userCheck) {
+	 if(!printdetails) {
 			printdetails = '<div class="alert alert-danger"><strong>Sorry!</strong>'+
 			'No Employee found. Want to add one ?</div>'+
 			'<div class="details">'+
