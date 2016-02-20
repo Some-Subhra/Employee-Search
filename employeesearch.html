@@ -59,7 +59,7 @@ function filterFunction(arr) {
                     	    '<p class="user-designation">'+ arr[i].designation +'</p></div></div>';
 		}
 	 }
-	 if(!printdetails) {
+	 if(printdetails==null) {
 			printdetails = '<div class="alert alert-danger"><strong>Sorry!</strong>'+
 			'No Employee found. Want to add one ?</div>'+
 			'<div class="details">'+
