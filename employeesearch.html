@@ -58,17 +58,19 @@ function filterFunction(arr) {
                     	    '<div class="name-desig pull-left"><p class="user-name">'+ arr[i].name +'</p>'+
                     	    '<p class="user-designation">'+ arr[i].designation +'</p></div></div>';
                 	    
-	}else {
-		adddetails = '<div class="alert alert-danger"><strong>Sorry!</strong>'+
+		if(!printdetails) {
+			adddetails = '<div class="alert alert-danger"><strong>Sorry!</strong>'+
 				'No Employee found. Want to add one ?</div>'+
 				'<div class="details">'+
 				'<input type="text" class="search-field user-new form-control" id="userNew" placeholder="Please Enter Employee Name to Add">'+
 				'<input type="text" class="search-field desig-new form-control" id="desigNew" placeholder="Please Enter Designation To Add">'+
 				'<button type="button" class="btn btn-primary" onclick="Add()">Add Employee</button>'+
 				'</div>';
+			document.getElementById("user-details").innerHTML = adddetails;
+		}
 	}
 	document.getElementById("user-details").innerHTML = printdetails;
-	document.getElementById("user-details").innerHTML = adddetails;
+	
 		 
     }
 }
