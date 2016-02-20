@@ -58,7 +58,7 @@ function filterFunction(arr) {
                     	    '<div class="name-desig pull-left"><p class="user-name">'+ arr[i].name +'</p>'+
                     	    '<p class="user-designation">'+ arr[i].designation +'</p></div></div>';
                 	    
-		if(!printdetails) {
+	/*	if(!printdetails) {
 			adddetails = '<div class="alert alert-danger"><strong>Sorry!</strong>'+
 				'No Employee found. Want to add one ?</div>'+
 				'<div class="details">'+
@@ -67,12 +67,11 @@ function filterFunction(arr) {
 				'<button type="button" class="btn btn-primary" onclick="Add()">Add Employee</button>'+
 				'</div>';
 			document.getElementById("user-details").innerHTML = adddetails;
+		}*/
 		}
-	}
-	document.getElementById("user-details").innerHTML = printdetails;
-	
-		 
-    }
+	 }
+	 console.log(printdetails);
+	 document.getElementById("user-details").innerHTML = printdetails;
 }
 </script>
 
